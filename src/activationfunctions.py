@@ -21,3 +21,10 @@ def binary_step(x):
 
 for value in values:
     print(f"Binary Step({value}) = {binary_step(value)}")
+
+def sigmoid(x):
+    import math
+    return 1/(1+math.exp(-x))
+
+for value in values:
+    print(f"Sigmoid({value})= {sigmoid(value)}")

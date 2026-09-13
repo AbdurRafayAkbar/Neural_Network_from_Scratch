@@ -16,5 +16,14 @@ from activationfunctions import linear
 linear_output = linear(weighted_sum)
 print(f"Linear Activation Output: {linear_output}")
 
-#
+#-------------------------------------------- Binary Step Activation Function
+
+from activationfunctions import binary_step
+print(f"Binary Step Activation Output: {binary_step(weighted_sum)}")
+
+#-------------------------------------------- Sigmoid Activation Function
+
+from activationfunctions import sigmoid
+
+print(f"Sigmoid Activation Output: {sigmoid(weighted_sum)}")
 
