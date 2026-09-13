@@ -35,4 +35,12 @@ def tanh(x):
 
 for value in values:
     print(f"Tanh({value})= {tanh(value)}")
-    
+
+def Relu(x):
+    if x>0:
+        return x
+    else:
+        return 0
+
+for value in values:
+    print(f"Relu({value})= {Relu(value)}")
