@@ -28,3 +28,11 @@ def sigmoid(x):
 
 for value in values:
     print(f"Sigmoid({value})= {sigmoid(value)}")
+
+def tanh(x):
+    import math
+    return (math.exp(x)-math.exp(-x)/math.exp(x)+math.exp(-x))
+
+for value in values:
+    print(f"Tanh({value})= {tanh(value)}")
+    

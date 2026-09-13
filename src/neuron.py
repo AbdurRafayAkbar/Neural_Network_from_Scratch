@@ -27,3 +27,7 @@ from activationfunctions import sigmoid
 
 print(f"Sigmoid Activation Output: {sigmoid(weighted_sum)}")
 
+#-------------------------------------------- Tanh Activation Function
+
+from activationfunctions import tanh
+print(f"tanh activation Output: {tanh(weighted_sum)}")
