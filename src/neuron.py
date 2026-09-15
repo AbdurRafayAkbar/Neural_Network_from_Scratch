@@ -14,25 +14,25 @@ print(f"Weighted sum: {weighted_sum}")
 from activationfunctions import linear
 
 linear_output = linear(weighted_sum)
-# print(f"Linear Activation Output: {linear_output}")
+linear_function = print(f"Linear Activation Output: {linear_output}")
 
 #-------------------------------------------- Binary Step Activation Function
 
 from activationfunctions import binary_step
-# print(f"Binary Step Activation Output: {binary_step(weighted_sum)}")
+binary_step_function = print(f"Binary Step Activation Output: {binary_step(weighted_sum)}")
 
 #-------------------------------------------- Sigmoid Activation Function
 
 from activationfunctions import sigmoid
 
-# print(f"Sigmoid Activation Output: {sigmoid(weighted_sum)}")
+sigmoid_function = print(f"Sigmoid Activation Output: {sigmoid(weighted_sum)}")
 
 #-------------------------------------------- Tanh Activation Function
 
 from activationfunctions import tanh
-print(f"tanh activation Output: {tanh(weighted_sum)}")
+tanh_function = print(f"tanh activation Output: {tanh(weighted_sum)}")
 
 #-------------------------------------------- Relu Activation Function
 
 from activationfunctions import Relu
-print(f"Relu Activation Output: {Relu(weighted_sum)}")
+relu_function = print(f"Relu Activation Output: {Relu(weighted_sum)}")
