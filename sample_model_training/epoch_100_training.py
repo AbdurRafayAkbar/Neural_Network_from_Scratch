@@ -37,3 +37,19 @@ for epoch in range(epochs):
     print(f"Epoch {epoch+1}: Total Loss: {total_loss}, Weight: {weight}, Bias: {bias}")
 
 
+print("\nFinal parameters:")
+print("Weight:", weight)
+print("Bias:", bias)
+
+
+print("\nPredictions:")
+
+for x, target in zip(x_values, target_values):
+
+    prediction = weight * x + bias
+
+    print(
+        f"x = {x}, "
+        f"Target = {target}, "
+        f"Prediction = {prediction:.2f}"
+    )
