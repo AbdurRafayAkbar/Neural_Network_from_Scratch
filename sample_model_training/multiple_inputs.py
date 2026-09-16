@@ -26,3 +26,13 @@ for epoch in range(epoch):
         loss=(prediction-targets)**2
 
         total_loss+=loss
+
+        #gradient calculation
+
+        weight_gradient=2(prediction-targets)*inputs
+        bias_gradient=2*(prediction-targets)
+
+        #update weights and bias
+
+        weights=weights-(learning_rate*weight_gradient)
+        bias=bias-(learning_rate*bias_gradient)
