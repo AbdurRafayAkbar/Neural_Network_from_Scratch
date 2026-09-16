@@ -9,3 +9,6 @@ target=np.array([
     [75]
 ],dtype=float)
 
+weights=np.zeros(3)
+bias=0.0
+
