@@ -36,3 +36,18 @@ for epoch in range(epoch):
 
         weights=weights-(learning_rate*weight_gradient)
         bias=bias-(learning_rate*bias_gradient)
+
+    average_loss=total_loss/len(X)
+
+    if (epoch + 1) % 100 == 0:
+        print(
+            f"Epoch {epoch + 1}: "
+            f"Loss = {average_loss:.4f}, "
+            f"Weights = {weights}, "
+            f"Bias = {bias:.4f}"
+        )
+
+
+print("\nFinal parameters:")
+print("Weights:", weights)
+print("Bias:", bias)
