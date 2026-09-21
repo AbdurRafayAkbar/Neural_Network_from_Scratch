@@ -35,6 +35,17 @@ z=(x1*w1)+(x2*w2)+(x3*w3)+b
 
 a=Relu(z)
 
-print(f"Predicted value: {a}")
-print(f"forward pass value: {z}")
-print(f"Target value: {y}")
+# print(f"Predicted value: {a}")
+# print(f"forward pass value: {z}")
+# print(f"Target value: {y}")
+
+#Measuring loss
+
+loss=(a-y)**2
+
+#Measring Backpropogation direction
+
+dl_da=2*(a-y)
+
+print(loss)
+print(dl_da)
