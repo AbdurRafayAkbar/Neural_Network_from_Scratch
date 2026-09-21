@@ -43,4 +43,7 @@ b=b-(lr*db)
 #output
 print(f"Updated weight: {w}")
 print(f"Updated bias: {b}")
+print(f"Updated loss: {Loss}")
+print(f"Weight gradient: {dw}")
+print(f"Bias gradient: {db}")
 print(f"Updated predicted: {predicted}")
