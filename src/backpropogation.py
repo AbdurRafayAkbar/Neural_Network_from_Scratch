@@ -15,7 +15,7 @@ predicted=(w*x)+b
 #Activation function (ReLU)
 
 a=Relu(predicted)
-
+print(a)
 #loss function (Mean Squared Error)
 loss=(predicted-y)**2
 print(loss)
