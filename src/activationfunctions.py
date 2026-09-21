@@ -17,6 +17,9 @@ def tanh(x):
 def Relu(x):
     return x if x > 0 else 0
 
+def Relu_derivative(x):
+    return 1 if x > 0 else 0
+
 if __name__ == "__main__":
     values = [-5,-4,-3,-2,-1,0,1,2,3,4,5]
     for value in values:
