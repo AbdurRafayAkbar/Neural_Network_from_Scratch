@@ -12,4 +12,16 @@ x_2=np.array([[2,4,6,8],
 
 print(f"2d array shape = {x_2.shape}")
 
+#Element Ooperations
 
+print(f"multiply by 2 2d array{x_2*2}")
+
+#addition operation
+
+a=np.array([2,4,6,8])
+b=np.array([10,20,30,40])
+print(f" added a + b ={(a+b)}")
+
+#dot product
+
+print(f"Multiplied a . b = {np.dot(a,b)}")
