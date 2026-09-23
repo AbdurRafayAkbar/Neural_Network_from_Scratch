@@ -14,10 +14,9 @@ w=np.array([[0.1,0.2,0.3],  #shape(2x3)
 
 b=np.array([[0.1,0.1,0.1]]) #shape(1x3)
 
-lr=0.01
+lr=0.001
 
-epochs=500
-for epcoh in epochs:
+for epoch in range(1000):
         
     #------------------Forward Pass
     z=(x@w)+b
@@ -45,4 +44,10 @@ for epcoh in epochs:
 
     db=np.sum(dz,axis=0)
 
-    
+    #Update Weights
+
+    w=w-(lr*dw)
+    b=b-(lr*db)
+
+    if epoch %10 == 0:
+        print(f"epoch {epoch} loss is {Loss}")
