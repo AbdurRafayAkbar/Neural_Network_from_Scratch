@@ -14,16 +14,35 @@ w=np.array([[0.1,0.2,0.3],  #shape(2x3)
 
 b=np.array([[0.1,0.1,0.1]]) #shape(1x3)
 
-#Forward Pass
-z=(x@w)+b
-# print(z)
+lr=0.01
 
-#Relu Activation
+epochs=500
+for epcoh in epochs:
+        
+    #------------------Forward Pass
+    z=(x@w)+b
+    # print(z)
 
-#Z remain same as all values are positive
+    #Relu Activation
 
-#Calculate the loss using MSE(Mean Squared Error)
+    #------------------Z remain same as all values are positive
 
-Loss=np.mean((y-z)**2)  #first y-z then its square and then Mean
+    #------------------Calculate the loss using MSE(Mean Squared Error)
 
-print(Loss)
+    Loss=np.mean((y-z)**2)  #first y-z then its square and then Mean
+
+    # print(Loss)
+
+    #------------------BACK PROPOGATION
+
+    dz=2*(z-y)/y.size #y.size bcz the error is mean and we divide it by total values
+
+    #Weight Gradient
+
+    dw=x.T@dz
+
+    #Bias Gradient
+
+    db=np.sum(dz,axis=0)
+
+    
