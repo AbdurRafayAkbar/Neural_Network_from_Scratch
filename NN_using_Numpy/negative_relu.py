@@ -23,3 +23,12 @@ print(f"a1 = {a1}" )
 print(f"a2 = {a2}" )
 print(f"a3 = {a3}" )
 
+# weights assigned for output value
+w1_out=0.5
+w2_out=0.8
+w3_out=0.4
+b=0.1
+output=(
+    (a1*w1_out+a2*w2_out+a3*w3_out)+b
+)
+print(f"output = {output}")
