@@ -8,3 +8,4 @@ z=torch.tensor([[1,2],[3,4]])
 
 print(x,y,z)
 print(x.shape,y.shape,z.shape)
+
